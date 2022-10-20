@@ -1,0 +1,25 @@
+# Inventories that inventory jamming will be detected with
+# NOTE: 'CRAFTING' fires for both creative inventory and survival inventory (i.e, player inventories)
+
+# Options:
+# - ANVIL
+# - BEACON
+# - BREWING
+# - CHEST
+# - CRAFTING
+# - CREATIVE
+# - DISPENSER
+# - DROPPER
+# - ENCHANTING
+# - ENDER_CHEST
+# - FURNACE
+# - HOPPER
+# - MERCHANT
+# - PLAYER
+# - WORKBENCH
+
+enabled: true
+log-to-console: true
+message-format: "&8[&bInvJD&8] &c{{player-name}} &cinventory jammed at &e({{x}}, {{y}}, {{z}}) &cin {{world}}"
+inventories:
+  - CRAFTING

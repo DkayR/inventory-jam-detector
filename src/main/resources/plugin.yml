@@ -1,0 +1,20 @@
+name: InvJamDetector
+version: 1.0
+author: dklink750
+main: ca.dklink750.invjamdetector.InvJamDetector
+api-version: 1.8.8
+commands:
+  toggleinvjam:
+    description: Toggles global detection
+    usage: /toggleinvjam
+    permission: invjamdetector.toggle
+permissions:
+  invjamdetector.see:
+    description: Allows to see when players inventory jam
+    default: op
+  invjamdetector.*:
+    description: Wildcard permission
+    default: op
+    children:
+      invjamdetector.see: true
+      invjamdetector.toggle: true
